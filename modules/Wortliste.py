@@ -20,7 +20,7 @@ class Wortliste:
         if wort in self.__worte:
             self.__worte.remove(wort)
             
-    def gibtDieWorteAus(self):
+    def gibDieWorteAus(self):
         print(f'die Worte der Liste {self.__name} sind:')
         for w in self.__worte:
             print(w)
