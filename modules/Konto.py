@@ -17,8 +17,11 @@ class Konto:
             self.__guthaben=betrag
         
     def einzahlen(self,betrag):
-        self.__guthaben+=betrag
-        
+        if betrag > 0:
+            self.__guthaben+=betrag
+        else:
+            print("Sie koennen nur einen positiven Beitrag einzahlen.")
+            
     def abheben(self,betrag):
         if betrag>self.__guthaben:
             print("Es ist nicht genug Guthaben vorhanden")
